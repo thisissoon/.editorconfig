@@ -8,3 +8,5 @@ team no matter what their editor of choice is.
 * Download the `.editorconfig` file in this repository to your home directory
 
 Some projects may also have a local settings file which overrides the root.
+
+.. _SOON: http://www.thisissoon.com/
