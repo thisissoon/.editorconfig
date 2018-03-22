@@ -15,7 +15,7 @@ root = true
 end_of_line = lf
 insert_final_newline = true
 
-# Backend Languages (Python, Go, Ruby etc)
+# Backend Languages
 
 # Python
 [*.py]
@@ -34,6 +34,18 @@ lines_after_imports=2
 indent_style = space
 indent_size = 2
 
+# Go
+[*.go]
+indent_style = tab
+
+# Rust
+[*.rs]
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
 # Front End Languages (HTML, JS/TS, CSS etc)
 
 [*.{js, ts, css, html}]
@@ -46,9 +58,19 @@ trim_trailing_whitespace = true
 [*.{js, ts}]
 quote_type = single
 
-# Misc
+# Misc (Configuration files etc)
 
-# YAML Based files - 2 space indent
-[*.{yml, yaml, sls}]
+# YAML
+[*.{yml, yaml}]
+indent_style = space
+indent_size = 2
+
+# Protocol Buffers
+[*.proto]
+indent_style = space
+indent_size = 2
+
+# TOML
+[*.toml]
 indent_style = space
 indent_size = 2
